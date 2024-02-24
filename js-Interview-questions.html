@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <input
+      type="text"
+      placeholder="Enter text"
+      id="inputValue"
+      onkeyup="getSuggestion()"
+    /> -->
+
+  <script>
+    //    let name = ["abc", "xyz", "mno"];
+    //    let output = name.map((item) =>(item))
+    //    console.log(output)
+
+    //    const arr = [1,2,3,4,8];
+    //    const output1 = arr.filter((item) => item % 2 !== 0);
+    //    console.log(output1)
+
+    // let a=1;
+    // console.log(a + a++)
+
+    // let x= true;
+    // let y = false;
+    // console.log(x * y);
+
+    let x = 7;
+    let y = 6;
+    x += x > y ? x : y;
+    console.log(x);
+
+    let dd = 5;
+    dd +=31;
+    console.log(dd)
+
+    // let x = "hello";
+    // let y = new String("hello");
+    // console.log(x == y);
+    // console.log(x === y);
+
+    //   let x = [1, 2, 3];
+    //   let y = x.slice();
+    //   console.log(y, x === y);
+    //   console.log("type", typeof y);
+
+    //   for (var i = 0; i < 3; i++) {
+    //     setTimeout(function log() {
+    //       console.log(i); // What is logged?
+    //     }, 1000);
+    //   }
+    //   function myFunction() {
+    //     var str = "Visit delhi!";
+
+    //     var n = str.search(/delhi/i);
+    //     document.write(n);
+    //   }
+
+    //   myFunction();
+    //   var cube = (function (x) {
+    //     return x * x * x;
+    //   })(7);
+
+    // var x = 10;
+    // (function(){
+    //     // console.log(x);
+    //     var x = 10;
+    //     console.log(x);
+    // })();
+
+    // debouncing in js
+    // let getValue = document.getElementById("inputValue");
+    // let timer;
+    // const debounce = (func, delay) => {
+    //   if (timer) clearTimeout(timer);
+    //   timer = setTimeout(func, delay);
+    // };
+    // const getSuggestion = () => {
+    //   debounce(() => {
+    //     console.log("fetching value ---->", getValue.value);
+    //   }, 500);
+    // };
+
+    // what is the output
+
+    // let a = 3;
+    // a++;
+    // console.log(a)
+    // console.log(a, `a-- ${a} - ${a} ++a ${a} - a++ ${a}  ==`, a-- - ++a - a++);
+    // console.log(a-- - ++a - a++);
+
+    // What is the output 
+    // let m = [1,2,3,4,5];
+    // let n = m.find((x)=>x>2);
+    // console.log(n); // output 3
+    // console.log(m[n]) // output 4 
+
+    // let [a,b,c] = [1,2];
+    // console.log(c) // output undefined
+
+    // let arr = [1,2,3,4,5];
+    // let result = arr.reduce((total, current_value)=> total+current_value)
+    // console.log("result" , result);
+
+
+    // how to convert string to array
+    // let str = "hello"
+    // console.log(Array.from(str));
+
+    // console.log(a);
+    // const  a = 10;
+
+    // result();
+    // let result =  function res(){
+    //   console.log("hoisting");
+    // }
+
+    // console.log(0 == false);
+
+    // {
+    //   var a =5;
+    //   let b = 10;
+    //   const c = 15;
+    // }
+    // console.log(a) // output 5
+    // console.log(b) // output reference error b is not defined because let and const are block scope
+    // console.log(c) // output reference error b is not defined
+
+    // function test(){
+    //   var a =5;
+    //   let b = 10;
+    //   const c = 15;
+    // }
+    // console.log(a) // output reference error a is not defined because
+    // console.log(a) // output reference error b is not defined because
+    // console.log(a) // output reference error c is not defined because
+    // test()
+
+    // var a = 5;
+    // let b = 10;
+    // const c = 15;
+
+    // {
+    //   console.log(a); // output 5 due to global scope
+    //   console.log(b); // output 10 due to global scope
+    //   console.log(c); // output 15 due to global scope
+    // }
+
+    // var a = 5;
+    // let b = 10;
+    // const c = 15;
+
+    // function test(){
+    //   console.log(a); // output 5 due to global scope
+    //   console.log(b); // output 10 due to global scope
+    //   console.log(c); // output 15 due to global scope
+    // }
+    // test();
+
+    // Factorial of a number
+    // function myFact(number) {
+    //   if (number == 0 || number == 1) {return 1}
+    //   else {
+    //     return number * myFact(number - 1);
+    //   }
+    // }
+    // console.log(myFact(8));
+
+    // promises Example
+
+    // let myPromise = new Promise((resolve, reject) =>{
+    //   let number = 1;
+    //   if(number > 2){
+    //     resolve("number is greater than 2");
+    //   }
+    //   else{
+    //     reject("number is smaller than 2")
+    //   }
+    // });
+    // myPromise.then((result)=>{
+    //     console.log("result ===>", result);
+    //   })
+    //   .catch((error)=>{console.log("error ===>", error)})
+
+    // write a program to convert first letter of string into upper case
+    // function toTitleCase(str) {
+    //   console.log(str.replace(/\b\w/g, l => l.toUpperCase()));
+    // }
+    // toTitleCase('shashi prakash');
+
+// let a = 10;
+// {
+//   a = -20;
+//   console.log(a);
+// }
+// console.log(a)
+
+// let a = 10
+// function test(){
+//   let b = a;
+//   a  = -10;
+//   console.log(b)
+// }
+// test();
+// console.log(a)
+
+// let a = function test(){
+//   console.log("function expression")
+// }
+// a();
+
+// let a = "hhh"
+// console.log(hhh)\
+
+// let arr = [1, 2, 3, 4, 5]
+// console.log(typeof arr )
+
+// for(let i = 1; i < 5; i++){
+//   if(i === 3)continue;
+//   console.log(i)
+// }
+
+// const a = 10;
+// function test(){
+//   console.log(a);
+//   const a = 5;
+// }
+// test();
+// // reference err
+
+// const a = 10;
+// {
+//   console.log(a);
+//   const a = 5;
+// }
+// reference errors
+
+
+// function test() {
+//   var a = 10;
+// }
+// test();
+// console.log(a) 
+// when declare varoiable with let const or var can't acess outside function.
+// output reference errror, var is function scope can't access outside function
+
+
+// {
+//   var a = 10;
+// }
+// console.log(a);
+// output 10 var is not block scope scope so we can excess it.
+
+// let a = true;
+// console.log(!typeof a) // output false
+
+// function factorial(n){
+//   if(n === 0){ return 1}
+//   else
+//   return n*factorial(n-1);
+// }
+// console.log(factorial(3));
+
+// let arr = [1];
+// console.log(arr)
+
+
+
+  </script>
+  <!-- <input type="text" placeholder="click me" id="inputValue" onkeyup="getSuggestion()">
+   
+  <table id="tBody">
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Age</th>
+
+    </tr>
+
+    <tbody >
+
+    </tbody>
+  </table>
+<script>
+const myList = [
+   {
+  id: 1,
+  name : "first",
+  age : 17
+  },
+   {
+  id: 2,
+  name : "lasr",
+  age : 29
+  },
+
+]
+
+
+  let inputVal = document.getElementById("inputValue");
+  let table = document.getElementById("tBody");
+  function getSuggestion(){
+   console.log(inputVal.value);
+}
+
+tableData(myList);
+function tableData(data){
+  for(let i = 0; i< data.length; i++){
+    var row = `<tr>
+      <td>${data[i].id}</td>
+      <td>${data[i].name}</td>
+      <td>${data[i].age}</td>
+      </tr>`
+      table.innerHTML += row
+  }
+
+} 
+</script>-->
+
+<!-- <script>
+getName(); // Namaste Javascript
+console.log(x); // undefined
+var x = 7;
+function getName() {
+console.log("Namaste Javascript");
+}
+
+</script> -->
+
+
+<!-- <input type="text" id="inputTextId" placeholder="Enter name to search" onkeyup="inputGetValue()">
+
+<table>
+<tr>
+  <th>id</th>
+  <th>name</th>
+  <th>mark</th>
+</tr>
+
+<tbody id="tBodyId">
+
+
+
+
+</tbody>
+
+</table>
+<script>
+let obj = [
+  {
+    id : 1,
+    name : 'Sneha',
+    mark : 'Good'
+  },
+  {
+    id : 2,
+    name : 'Priya',
+    mark : 'Average'
+  },
+  {
+    id : 3,
+    name : 'Neha',
+    mark : 'Bad'
+  }
+]
+
+var val;
+var filtered = (val == undefined) ? obj : (obj.filter((el) =>el.name.toLocaleLowerCase().includes(val)))
+console.log(filtered)
+let textValue = document.getElementById('inputTextId');
+let tableBodyId = document.getElementById('tBodyId');
+console.log("vall",val)
+const inputGetValue = () =>{
+  val = textValue.value.toLocaleLowerCase();
+  console.log(val)
+}
+const showTableData = (data) =>{
+  for(let i = 0; i < data.length; i++){
+    let row = `<tr>
+      <td>${data[i].id}</td>
+      <td>${data[i].name}</td>
+      <td>${data[i].mark}</td>
+      </tr>`
+      tableBodyId.innerHTML +=row;  
+    }
+    
+  }
+  showTableData(filtered);
+
+
+</script> -->
+
+
+<script>
+  // let ob = {name : "data"};
+
+// let me="Mern Developer";
+// function sudo(){
+// you="artist";
+// }
+// sudo();
+// if(you){
+// you="I'm ";
+// console.log(you,me);
+// }
+
+// memizaion example in javascript
+
+// const memo = () =>{  // this is high order function
+//   let cache = {};
+//   return (value)=>{
+// if(value in cache){
+//   console.log("value from cache");
+//   return cache[value];
+// }
+// else{
+//   console.log("value ouside cache");
+//   let result = value + 10;
+//   cache[value] = result;
+//   return result;
+// }
+//   }
+// }
+// let res = memo();
+// console.log(res(5));
+// console.log(res(15));
+
+
+
+// Example of currying
+
+// const sum = (a) => {
+//        return (b)=>{
+//           return (c)=>{
+//             return a+b+c;
+//           }
+//      }
+// }
+// console.log(performance.now())
+// const res = sum(10)(20)(30);
+// console.log(res);
+
+</script>
+
+
+<script>
+
+  // let xx ="hello"; // its type = string
+  // let yy = new String("hello"); // its type = object
+  // console.log(xx == yy); // true
+  // console.log(xx === yy); // false due to different types
+  // console.log(typeof xx);
+  // console.log(typeof yy);
+  // console.log('5' - - 3)
+
+</script>
+    <!-- ############################### get input field value and show inside div ##############################-->
+    
+    <!-- <input type="text" placeholder="Emter text" id="inputId"/>
+    <div id="datashow"></div>
+
+    <script>
+      let inputData = document.getElementById("inputId");
+      var data = document.getElementById("datashow");
+      inputData.addEventListener('keyup', ()=>{
+         data.innerHTML = inputData.value;
+      })
+</script> -->
+
+<!-- ############################### create table data and  filtered data on change ###########################-->
+
+<!-- <body>
+
+  <input type="search" placeholder="Search data by name" id="searchId">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tbody id="tBodyId">
+    </tbody>
+  </table>
+
+  <script>
+    let tBody = document.getElementById('tBodyId');
+    let search = document.getElementById('searchId');
+
+    search.addEventListener('keyup',()=>{
+      let searchvalue = search.value.toLowerCase();
+      let filteredData = user.filter((item)=> item.name.toLowerCase().includes(searchvalue));
+      ShowData(filteredData);
+      console.log(filteredData.length)
+    })
+
+
+    ShowData(user);
+    function ShowData(data){
+      tBody.innerHTML = '';
+      if(data.length == 0){
+          tBody.innerHTML = `<tr><td colspan="3">Data not found</td></tr>`;
+        }
+        else{
+          for(let i=0; i<data.length; i++){
+              let row = `
+              <td>${data[i].id}</td>
+              <td>${data[i].name}</td>
+              <td>${data[i].age}</td>
+              `
+              tBody.innerHTML += row;
+          }
+        }
+    }
+
+  </script>
+</body> -->
+
+
+</body>
+
+</html>
